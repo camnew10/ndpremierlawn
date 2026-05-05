@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N-D Premier Lawn & Landscape</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; }
+    header { background: linear-gradient(90deg, red, white, blue); padding: 20px; text-align: center; }
+    header h1 { margin: 0; }
+    nav { background: #111; padding: 12px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: red; }
+    section { padding: 40px; display: none; max-width: 900px; margin: auto; }
+    section.active { display: block; }
+    .hero { text-align: center; }
+    .hero h2 { font-size: 28px; }
+    .gallery img { width: 250px; margin: 10px; border-radius: 10px; }
+    .contact-box { background: white; padding: 20px; border-radius: 10px; }
+    .cta { display: inline-block; margin-top: 15px; padding: 12px 20px; background: red; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; }
+    footer { background: #111; color: white; text-align: center; padding: 15px; position: fixed; width: 100%; bottom: 0; }
+  </style>
+</head>
+<body><header>
+  <h1>N-D Premier Lawn & Landscape</h1>
+  <p>Reliable Lawn Care You Can Trust</p>
+</header><nav>
+  <a href="#" onclick="showSection('home')">Home</a>
+  <a href="#" onclick="showSection('about')">About</a>
+  <a href="#" onclick="showSection('gallery')">Gallery</a>
+  <a href="#" onclick="showSection('contact')">Contact</a>
+</nav><section id="home" class="active hero">
+  <h2>Professional Lawn & Landscape Services</h2>
+  <p>We provide dependable, high-quality lawn care and landscaping services for residential and commercial properties.</p>
+  <p>From routine mowing to full yard transformations — we get the job done right.</p>
+  <a class="cta" href="#" onclick="showSection('contact')">Get a Free Estimate</a>
+</section><section id="about">
+  <h2>About Us</h2>
+  <p>N-D Premier Lawn & Landscape is a locally focused business built on hard work, reliability, and attention to detail.</p>
+  <p>We take pride in every yard we service, treating each property like it’s our own. Whether you need regular maintenance or a full landscape upgrade, we deliver results you can count on.</p>
+  <ul>
+    <li>Lawn mowing & maintenance</li>
+    <li>Mulch & rock installation</li>
+    <li>Seasonal cleanup</li>
+    <li>Landscape improvements</li>
+  </ul>
+</section><section id="gallery" class="gallery">
+  <h2>Our Work</h2>
+  <p>Before & after transformations and clean, professional results.</p>
+  <img src="" alt="Lawn 1">
+  <img src="" alt="Lawn 2">
+  <img src="" alt="Lawn 3">
+</section><section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-box">
+    <p><strong>Phone:</strong> 7123898383</p>
+    <p><strong>Email:</strong> contact premierlawniowa@gmail.com </p>
+    <p>Call or message us today for a free estimate.</p>
+    <a class="cta" href="tel:7123898383">Call Now</a>
+  </div>
+</section><footer>
+  <p>© 2026 N-D Premier Lawn & Landscape</p>
+</footer><script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    document.getElementById(sectionId).classList.add('active');
+  }
+</script></body>
+</html>
